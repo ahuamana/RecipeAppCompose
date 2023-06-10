@@ -74,11 +74,7 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    def hilt_version = "2.46.1"
 
-    //hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
     //Retrofit
     def retrofit_version = "2.9.0"
@@ -91,6 +87,10 @@ dependencies {
 
     def lifecycle_version = "2.6.1"
     def hilt_navigation_compose_version = "1.0.0"
+    def hilt_version = "2.46.1"
+    //hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
     // ViewModel utilities for Compose -- lifecycle libraries
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
